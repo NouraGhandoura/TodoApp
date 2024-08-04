@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from '@testing-library/react-native';
-import Home from './index'
 import configureStore from 'redux-mock-store';
 import { Provider } from 'react-redux';
+import Favorite from './index';
 
 const mockStore = configureStore([]);
 const initialState = {
@@ -11,10 +11,10 @@ const initialState = {
 
 const store = mockStore(initialState);
 
-describe('Home Screen', () => {
+describe('Favorite Screen', () => {
   it('renders correctly', () => {
     render( <Provider store={store}>
-      <Home />
+      <Favorite />
     </Provider>);
   });
 });

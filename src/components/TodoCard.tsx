@@ -9,7 +9,7 @@ import {toggleFavorite} from '../redux/slices/todoSlice';
 interface TodoCardProps {
   day: string;
   month: string;
-  mood: string;
+  title: string;
   todoId: number;
   favoriteIcon: boolean;
 }
@@ -17,7 +17,7 @@ interface TodoCardProps {
 const TodoCard: React.FC<TodoCardProps> = ({
   day,
   month,
-  mood,
+  title,
   todoId,
   favoriteIcon,
 }) => {
@@ -31,7 +31,8 @@ const TodoCard: React.FC<TodoCardProps> = ({
   const ShowFavoriteIcon = () => {
     if (favoriteIcon == true) {
       return favorite ? <FavoriteIcon /> : <UnFavoriteIcon />;
-    } else <></>;
+    } else  
+    return null;
   };
   return (
     <View style={styles.card}>
@@ -41,7 +42,7 @@ const TodoCard: React.FC<TodoCardProps> = ({
       </View>
       <View style={styles.cardDivider}></View>
       <View style={styles.cardContent}>
-        <Text style={styles.cardContentText}>{mood}</Text>
+        <Text style={styles.cardContentText}>{title}</Text>
       </View>
       <TouchableOpacity
         style={styles.cardImageContainer}

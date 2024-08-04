@@ -34,7 +34,7 @@ export default function Home() {
                   key={index}
                   day={todo.day}
                   month={todo.month}
-                  mood={todo.title}
+                  title={todo.title}
                   todoId={todo.id}
                   favoriteIcon={true}
                 />
