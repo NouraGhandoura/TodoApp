@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Favorite Screen renders correctly and matches snapshot 1`] = `
+<RCTSafeAreaView
+  style={
+    {
+      "backgroundColor": "#E4CBCB",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "backgroundColor": "#E4CBCB",
+        "flex": 1,
+        "paddingHorizontal": 20,
+      }
+    }
+  >
+    <RCTScrollView
+      style={
+        {
+          "backgroundColor": "#E4CBCB",
+        }
+      }
+    >
+      <View>
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#fff",
+                "fontSize": 18,
+                "marginTop": 200,
+              }
+            }
+          >
+            No favorite tasks available
+          </Text>
+        </View>
+      </View>
+    </RCTScrollView>
+  </View>
+</RCTSafeAreaView>
+`;
