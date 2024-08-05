@@ -1,6 +1,5 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet, Text, View, ScrollView} from 'react-native';
-
 import {useSelector} from 'react-redux';
 import TodoCard from '../../components/TodoCard';
 import {IToDoTask} from '../../redux/slices/todoSlice';
@@ -20,7 +19,7 @@ export default function Favorite() {
                 key={todo.id}
                 day={todo.day}
                 month={todo.month}
-                mood={todo.title}
+                title={todo.title}
                 todoId={todo.id}
                 favoriteIcon={false}
               />
