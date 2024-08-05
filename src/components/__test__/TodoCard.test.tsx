@@ -28,7 +28,7 @@ describe('TodoCard', () => {
 
 
 
-  it('does not render an icon if favoriteIcon prop is false', () => {
+  it('does not render an icon if FavoriteIcon prop is false', () => {
     const { queryByTestId } = render(
       <Provider store={store}>
         <TodoCard 
